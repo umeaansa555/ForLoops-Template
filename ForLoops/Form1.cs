@@ -51,7 +51,7 @@ namespace ForLoops
             /// *****
             /// 
             /// Hint: Start off with a string that has 1 "*" in it, then 
-            /// in the loop you will add another "*"
+            /// in the loop you will add another "*" using +=
         }
     }
 }
