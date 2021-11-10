@@ -43,11 +43,12 @@ namespace ForLoops
 
             ///4.  Create a loop that displays the sum of all numbers inclusive 
             ///between 1 and 10. The answers should be 55.
-            
-            int sum = 1;
-            for (int i = 1; i <= 10; i++)
             {
-                q4Output.Text = $"{i} ";
+                int sum = 0;
+                for (int i = 1; i <= 10; sum = i++)
+                {
+                    q4Output.Text = $"{sum + i} ";
+                }
             }
 
 
@@ -69,12 +70,19 @@ namespace ForLoops
             /// 
             /// Hint: Start off with a string that has 1 "*" in it, then 
             /// in the loop you will add another "*" using +=
-            
+
             //int increase;
             //for (string i = "*"; i = "*****"; i = increase++)
             //{
             //    q1Output.Text += $"\n{i}";
             //}
+
+            ////string star = "*";
+            ////for(int i = 1; i <= 5; Convert.ToInt32(star) = 1 * i++)
+            ////{
+            ////    Convert.ToInt32(star) = 1;
+            ////    q5Output.Text += $"\n{star * i}";
+            ////}
 
         }
     }
