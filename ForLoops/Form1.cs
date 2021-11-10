@@ -45,9 +45,9 @@ namespace ForLoops
             ///between 1 and 10. The answers should be 55.
             
             int sum = 1;
-            for (int i = 1; i <= 10; sum = i++ + i)
+            for (int i = 1; i <= 10; i++)
             {
-                q4Output.Text += $"{sum} ";
+                q4Output.Text = $"{i} ";
             }
 
 
@@ -69,6 +69,13 @@ namespace ForLoops
             /// 
             /// Hint: Start off with a string that has 1 "*" in it, then 
             /// in the loop you will add another "*" using +=
+            
+            //int increase;
+            //for (string i = "*"; i = "*****"; i = increase++)
+            //{
+            //    q1Output.Text += $"\n{i}";
+            //}
+
         }
     }
 }
