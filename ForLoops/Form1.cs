@@ -29,7 +29,7 @@ namespace ForLoops
 
             ///2.  Create a loop that displays all values inclusive between 10-6.
 
-            for (int i = 10; i >=6; i--)
+            for (int i = 10; i >= 6; i--)
             {
                 q2Output.Text += $"{i} ";
             }
@@ -43,19 +43,19 @@ namespace ForLoops
 
             ///4.  Create a loop that displays the sum of all numbers inclusive 
             ///between 1 and 10. The answers should be 55.
+
+            int sum = 0;
+            for (int i = 1; i <= 10; i++)
             {
-                int sum = 0;
-                for (int i = 1; i <= 10; sum = i++)
-                {
-                    q4Output.Text = $"{sum + i} ";
-                }
+                sum = sum + i;
             }
+            q4Output.Text = $"{sum}";
 
 
             ///5. Create a loop that displays all leap years inclusive between 
             ///1990 and 2010. The output should be: 1992 1996 2000 2004 2008
 
-            for (int i = 1990 +2 ; i <= 2010; i = i + 4)
+            for (int i = 1990 + 2; i <= 2010; i = i + 4)
             {
                 q5Output.Text += $"{i} ";
             }
@@ -83,6 +83,15 @@ namespace ForLoops
             ////    Convert.ToInt32(star) = 1;
             ////    q5Output.Text += $"\n{star * i}";
             ////}
+
+           string star = "*";
+            for (int i = 1; i <=5; i++)
+            {
+                
+                q6Output.Text += $"{star}\n";
+                star = star + "*";
+            }
+            
 
         }
     }
